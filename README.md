@@ -196,3 +196,4 @@ kubectl delete -f apps/sample/auto-scaler.yml -n kube-system
 
 - [EKS Cluster Using Terraform + IAM Roles for Service Accounts & EKS Cluster Autoscaler](https://www.youtube.com/watch?v=MZyrxzb7yAU)
 - [Deploy to AWS with Terraform within a GitHub Action](https://www.youtube.com/watch?v=GowFk_5Rx_I&t=195s)
+- 

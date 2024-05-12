@@ -19,4 +19,6 @@ resource "aws_eks_node_group" "node" {
   update_config {
     max_unavailable = 1
   }
+
+  ami_type = "AL2_ARM_64"
 }

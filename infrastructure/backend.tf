@@ -1,6 +1,6 @@
 locals {
-  bucket_name         = "postech-challenge-3-state"
-  dynamodb_table_name = "postech-challenge-3-state"
+  bucket_name         = "postech-challenge-3-state-eks"
+  dynamodb_table_name = "postech-challenge-3-state-eks"
 }
 
 resource "aws_kms_key" "terraform-bucket-key" {
@@ -10,7 +10,7 @@ resource "aws_kms_key" "terraform-bucket-key" {
 }
 
 resource "aws_kms_alias" "key-alias" {
-  name          = "alias/terraform-bucket-key"
+  name          = "alias/terraform-bucket-key-eks"
   target_key_id = aws_kms_key.terraform-bucket-key.key_id
 }
 

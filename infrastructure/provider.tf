@@ -4,12 +4,12 @@ terraform {
 
   # --- At first terraform init must comment this block
   backend "s3" {
-    bucket         = "postech-challenge-3-state"
+    bucket         = "postech-challenge-3-state-eks"
     key            = "state/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
     kms_key_id     = "alias/terraform-bucket-key"
-    dynamodb_table = "postech-challenge-3-state"
+    dynamodb_table = "postech-challenge-3-state-eks"
   }
   # --- At first terraform init must comment this block
   required_providers {

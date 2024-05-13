@@ -4,7 +4,7 @@ locals {
 }
 
 resource "aws_kms_key" "terraform-bucket-key" {
-  description             = "This key is used to encrypt bucket objects"
+  description             = "This key is used to encrypt bucket objects (changed)"
   deletion_window_in_days = 10
   enable_key_rotation     = true
 }
